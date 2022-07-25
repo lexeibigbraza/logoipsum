@@ -1,0 +1,150 @@
+/* убираем цсс стили дефолтные
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+*/
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.header,footer {
+    background-color: rgba(255, 113, 67, 0.27);
+    padding: 38px 0 48px; 
+}
+
+
+.container {
+     max-width: 1070px;
+    margin: 0 auto;
+}
+
+.header-flex, .about-flex, .footer-flex  {
+    display: flex;
+    /*выравнивание по ширине*/
+    justify-content: space-between;
+    /*выравнивание по высоте*/
+    align-items: center;
+
+
+}
+
+.container-about {
+    max-width: 1070px;
+   margin: 0 auto;
+}
+
+.about-flex {
+   margin: 104px auto 85px;
+
+}
+
+
+
+.nav{
+
+}
+
+.nav-li {
+    display: inline-block;
+    
+}
+
+/*псевдокласс, убираем первый пробел*/
+.nav-li:not(:first-of-type) {
+    margin-left: 49px;
+}
+
+.nav-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: -0.468947px;
+    color: #696871;
+    text-decoration: none;
+}
+
+/*анимация при наведении*/
+.nav-link:hover {
+       color: black;
+    transition: 300ms; /*более плавная анимация*/
+}
+
+
+.button {
+    width: 212px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-orange {
+   background-color: #FF7143;
+}
+
+.button-orange:hover {
+    background-color: #f57950;
+    transition: 500ms;
+}
+
+.about-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 77px;
+    /* or 96% */
+    letter-spacing: -2.50105px;
+    color: #19191B;
+
+    max-width: 467px;
+    margin-bottom: 30px;
+
+}
+
+.about-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.625263px;
+    color: #696871;
+    max-width: 467px;
+    margin-bottom: 50px;
+}
+
+.button-violet {
+    background-color: #5454D4;
+}
+
+.button-violet:hover {
+    background-color: #6868da;
+}
+
+.button-transparent {
+    background: none;
+    color: #5454D4;
+    border: 1px solid #5454D4;
+    margin-left: 35px;
+}
+
+.button-transparent:hover {
+    background-color: #6868da;
+    border: none;
+    color: white;
+}
