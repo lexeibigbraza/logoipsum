@@ -25,7 +25,7 @@ body {
     margin: 0 auto;
 }
 
-.header-flex, .about-flex, .footer-flex  {
+.header-flex, .about-flex, .footer-flex, .subscribe, .plan-flex  {
     display: flex;
     /*выравнивание по ширине*/
     justify-content: space-between;
@@ -148,3 +148,125 @@ body {
     border: none;
     color: white;
 }
+
+.subscribe {
+    margin-bottom: 85px;
+}
+
+.subscribe-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56316px;
+    color: #19191B;
+    margin-bottom: 38px;
+    }
+
+input {
+    width: 302px;
+    height: 60px;
+    border: 1px solid #7087FF;
+    border-radius: 10px;
+    margin-right: 39px;
+    padding-left: 14px;
+    box-sizing: border-box;
+
+    }
+
+input::placeholder, input {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
+    color: #000000;
+    }
+
+input:focus    {
+    outline: none;
+}
+
+.plan {
+    margin-bottom: 130px;
+}
+
+.plan-title {
+   max-width: 504px;
+   margin-bottom: 110px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+}
+
+.item {
+width: 330px;
+background: #F8F8F8;
+border-radius: 10px;
+text-align: center;
+padding: 34px 0 27px;
+}
+
+.item:hover {
+    background: #FF7143;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+    transition: 500ms;
+    }
+
+.item:hover .item-text, .item:hover .item-title, .item:hover .item-title-span, .item:hover .item-li {
+    color: white;
+    transition: 500ms;
+}   
+
+.item-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.562737px;
+    color: #696871;
+}
+
+.item-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+    margin: 22px 0 28px;
+}
+
+.item-title-span {
+    font-size: 28px;
+}
+
+.item-li {
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.531474px;
+    color: #696871;
+}
+
+.button-item {
+    width: 285px;
+    background: white;
+    color: #5454D4;
+    margin-top: 36px;
+}
+
+.item:hover .button-item {
+    background: #9F3919;
+    color: white;
+    transition: 500ms;
+}
+
+
